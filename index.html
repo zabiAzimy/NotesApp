@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" integrity="sha512-5fsy+3xG8N/1PV5MIJz9ZsWpkltijBI48gBzQ/Z2eVATePGHOkMIn+xTDHIfTZFVb9GMpflF2wOWItqxAP2oLQ==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style.css">
+    <title>Notes</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h4 class="header">Notes</h4>
+
+        <div class="row">
+            <div class="four columns box-1" id="list">
+                <h5>List of notes</h5>
+            </div>
+
+            <div class="four columns box" id="form">
+                <p class="filter-text">Add a note</p>
+                <form id="form">
+                    <div class="row">
+                        <div>
+                            <label for="title">Title</label>
+                            <input class="twelve columns" type="text" name="title" placeholder="Enter a todo here">
+                        </div>
+                        <div class="">
+                            <input type="submit" class="twelve columns button button-primary" value="Create" id="create">
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="four columns box" id="filter">
+                <p class="filter-text">Filter the notes</p>
+                <div class="row">
+                    <div class="">
+                        <label for="search">Search</label>
+                        <input type="text" placeholder="search a note" class="twelve columns" id="search">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="app-functions.js"></script>
+    <script src="http://wzrd.in/standalone/uuid%2Fv4@latest"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
